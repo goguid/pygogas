@@ -7,14 +7,16 @@ class Model(ABC):
 
 class Usuario(Model):
     def guardar(self):
-        print("guardando en BBDD")
+        print("guardando en bbdd")
 
 class Sesion(Model):
     def guardar(self):
-        print("guardando archivo")
+        print("guardando en archivo")
 
-def guardar(entidad):
-    entidad.guardar()
+def guardar(entidades):
+    for entidad in entidades:
+        entidad.guardar()
 
 usuario = Usuario()
-guardar(usuario)
+sesion = Sesion()
+guardar([sesion,usuario])

@@ -10,7 +10,7 @@ class Model:
 
     @classmethod
     def buscar_por_id(self, _id):
-        print (f"buscando por id {_id}")
+        print (f"buscando por id {_id} en la tabla {self.tabla}")
 
 class Usuario(Model):
     tabla = "Usuario"

@@ -23,4 +23,4 @@ class Perro:
 
 perro = Perro("chanchito",5)
 perro.habla()
-print(perro)  
+print(perro) 
